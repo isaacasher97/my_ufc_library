@@ -1,30 +1,33 @@
 # PROJECT 2
 
-- **Project Name:** jlkdjfljdflkjflsdfj
-- **Project By:** your name
-- [**LINK TO GITHUB**](http://www.github.com)
-- [**LINK TO DEPLOYED WEBSITE**](http://www.render.com)
+- **Project Name:** My UFC Library
+- **Project By:** Isaac Asher
+- [**LINK TO GITHUB**](https://github.com/isaacasher97/my_ufc_library)
+- [**LINK TO DEPLOYED WEBSITE**](https://my-ufc-library.onrender.com/)
 - **List of Technologies used:** HTML, JS, CSS, Node, Express, EJS, Mongo
-- [**LINK TO TRELLO**](http://www.render.com)
+- [**LINK TO TRELLO**](https://trello.com/b/LMJy9CG4/project-2)
 
 ## Description
 
-"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"
+As A User, I will initially be taken to a page with an option to login or signup. Once logged into my account, I can see my list of ufc fighters in my library of fighters. Users can also access each individual fighter that is in their library on a seperate page. 
+
+Each fighter in a users library can be edited & updated. There will also be an option to add new fighters as well as delete current fighters. 
 
 ## Mock UP of UI
 
-- ![Desktop View](http://imgur.com)
-- ![Mobile View](http://imgur.com)
+- Desktop:
+![Desktop View](https://i.imgur.com/YpzGmUP.png)
+</br>
+- Mobile:
+![Mobile View](https://i.imgur.com/TIO9B6E.png)
 
 ## List of Backend Endpoints
 
 | ENDPOINT | METHOD | PURPOSE |
 |----------|--------|---------|
-| /dog | get | list all dogs |
-|/dog/:id | get | list one dog |
+| /myufc | get | list all ufc fighters |
+| /myufc/:id | get | list one ufc fighter |
 
 ## ERD (ENTITY RELATIONSHIP DIAGRAM)
 
-![PICTURE OF ERD](http://imgur.com)
-
-- [Free ERD Diagram Tool](https://dbdiagram.io/home)
+![PICTURE OF ERD](https://i.imgur.com/SCsZoDw.png)
