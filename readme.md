@@ -15,18 +15,24 @@ Each fighter in a users library can be edited & updated. There will also be an o
 
 ## Mock UP of UI
 
-- Desktop:
+- Desktop & Mobile:
+
 ![Desktop View](https://i.imgur.com/YpzGmUP.png)
-- Mobile:
+
 ![Mobile View](https://i.imgur.com/TIO9B6E.png)
 
 ## List of Backend Endpoints
 
-| ENDPOINT | METHOD | PURPOSE |
-|----------|--------|---------|
-| /myufc | get | list all ufc fighters |
-| /myufc/:id | get | list one ufc fighter |
-
+| ROUTE NAME | ENDPOINT | METHOD | PURPOSE |
+|------------|----------|--------|---------|
+| Index | /myufc | GET | Display list of all my ufc fighters |
+| New | /myufc/new | GET | Displays a form to create a new fighter |
+| Create | /myufc | POST |  Creates a New Fighter in my library |
+| Show | /myufc/:id | GET | Display's one specific fighter's details |
+| Edit | /myufc/:id/edit | GET | Displays a form relating to an existing fighter with input types that can be edited |
+| Update | /myufc/:id | PUT | Updates a specific fighter in my library |
+| Destroy | /myufc/:id | DELETE | Deltes a Specific Fighter in my library |
+   
 ## ERD (ENTITY RELATIONSHIP DIAGRAM)
 
 ![PICTURE OF ERD](https://i.imgur.com/SCsZoDw.png)
