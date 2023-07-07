@@ -17,7 +17,6 @@ Each fighter in a users library can be edited & updated. There will also be an o
 
 - Desktop:
 ![Desktop View](https://i.imgur.com/YpzGmUP.png)
-</br>
 - Mobile:
 ![Mobile View](https://i.imgur.com/TIO9B6E.png)
 
