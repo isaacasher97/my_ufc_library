@@ -20,6 +20,9 @@ app.get('/fighter', async (req, res) => {
     res.render('fighters/index.ejs', {fighters: allFighters})
 })
 
+app.get('/fighter/new', (req, res) => {
+    res.render('fighters/new.ejs')
+})
 
 // Listen 
 const PORT = process.env.PORT || 3000;
