@@ -1,0 +1,61 @@
+body {
+    background-color: beige;
+}
+nav {
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.navlink {
+    display: inline;
+}
+
+.navAnchor {
+    text-decoration: none;
+    color: antiquewhite;
+}
+
+.navAnchor:hover {
+    text-decoration: underline;
+}
+h1 {
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.indexImg {
+    width: 350px;
+    height: 350px;
+    border-radius: 10px;
+}
+
+.indexLi {
+    display: block;
+}
+
+#topFighterCard {
+    font-size: 20px;
+    text-align: center;
+    font-weight: 700;
+}
+
+.bottomFighterCard {
+    background-color: aqua;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.bottomFighterCard > li {
+    margin: 5px auto;
+    font-family: cursive;
+}
+.indexUl {
+    margin: 0 auto;
+}

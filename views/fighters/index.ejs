@@ -4,18 +4,21 @@
 <body>
 <%- include('../partials/header.ejs') %>
     <main>
-        <div>
+        <div class="container">
             <% for (fighter of fighters) { %>
 
-            <ul>
-                <li><%= fighter.name %></li>
-                <li><img src="<%= fighter.img %>"></li>
-                <li>Age: <%= fighter.age %> Years Old</li>
-                <li>Weight Class: <%= fighter.weightClass %></li>
-                <li>Hometown: <%= fighter.hometown %></li>
-                <li>Ready To Fight? <%= fighter.readyToFight %></li>
+           
+            <ul class="indexUl">
+                <li class="indexLi" id="topFighterCard"><%= fighter.name %></li>
+                <li class="indexLi"><img class="indexImg" src="<%= fighter.img %>"></li>
+                <div class="bottomFighterCard">
+                <li class="indexLi">Age: <%= fighter.age %> Years Old</li>
+                <li class="indexLi">Weight Class: <%= fighter.weightClass %></li>
+                <li class="indexLi">Hometown: <%= fighter.hometown %></li>
+                <li class="indexLi">Ready To Fight? <%= fighter.readyToFight %></li>
+                </div>
             </ul>
-
+            
            <% } %>
         </div>
     </main>
