@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyUfc</title>
+</head>
+<body>
+    <main>
+        <div>
+            <% for (fighter of fighters) { %>
+
+            <ul>
+                <li><%= fighter.name %></li>
+                <li><img src="<%= fighter.img %>"></li>
+                <li>Age: <%= fighter.age %> Years Old</li>
+                <li>Weight Class: <%= fighter.weightClass %></li>
+                <li>Hometown: <%= fighter.hometown %></li>
+                <li>Ready To Fight? <%= fighter.readyToFight %></li>
+            </ul>
+
+           <% } %>
+        </div>
+    </main>
+</body>
+</html>
