@@ -25,13 +25,13 @@ Each fighter in a users library can be edited & updated. There will also be an o
 
 | ROUTE NAME | ENDPOINT | METHOD | PURPOSE |
 |------------|----------|--------|---------|
-| Index | /myufc | GET | Display list of all my ufc fighters |
-| New | /myufc/new | GET | Displays a form to create a new fighter |
-| Create | /myufc | POST |  Creates a New Fighter in my library |
-| Show | /myufc/:id | GET | Display's one specific fighter's details |
-| Edit | /myufc/:id/edit | GET | Displays a form relating to an existing fighter with input types that can be edited |
-| Update | /myufc/:id | PUT | Updates a specific fighter in my library |
-| Destroy | /myufc/:id | DELETE | Deltes a Specific Fighter in my library |
+| Index | /fighter | GET | Display list of all my ufc fighters |
+| New | /fighter/new | GET | Displays a form to create a new fighter |
+| Create | /fighter | POST |  Creates a New Fighter in my library |
+| Show | /fighter/:id | GET | Display's one specific fighter's details |
+| Edit | /fighter/:id/edit | GET | Displays a form relating to an existing fighter with input types that can be edited |
+| Update | /fighter/:id | PUT | Updates a specific fighter in my library |
+| Destroy | /fighter/:id | DELETE | Deltes a Specific Fighter in my library |
    
 ## ERD (ENTITY RELATIONSHIP DIAGRAM)
 
