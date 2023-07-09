@@ -10,6 +10,7 @@ const app = express();
 
 // middleware
 app.use(morgan('dev')); // logging
+app.use(express.urlencoded()); // allows the req.body to be read from the form
 app.use(methodOverride('_method')); // override with POST having ?_method=DELETE or ?_method=PUT
 app.use(express.static('public')); // serve static files from public folder
 app.use("/fighter", FighterRouter)
