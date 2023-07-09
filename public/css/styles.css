@@ -60,3 +60,12 @@ h1 {
 .indexUl {
     margin: 0 auto;
 }
+
+#topFighterCard > a {
+    text-decoration: none;
+    color: black;
+}
+
+#topFighterCard > a:hover {
+    text-decoration: underline;
+}

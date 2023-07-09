@@ -22,4 +22,10 @@ await Fighter.create(req.body);
 res.redirect('/fighter')
 })
 
+router.get('/:id', async (req, res) => {
+    const id = req.params.id;
+    const fighter = await Fighter.findById(id);
+    res.render('fighters/show.ejs', {fighter})
+})
+
 module.exports = router;

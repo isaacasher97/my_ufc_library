@@ -9,7 +9,7 @@
 
            
             <ul class="indexUl">
-                <li class="indexLi" id="topFighterCard"><%= fighter.name %></li>
+                <li class="indexLi" id="topFighterCard"><a href="/fighter/<%= fighter._id %>"><%= fighter.name %></a></li>
                 <li class="indexLi"><img class="indexImg" src="<%= fighter.img %>"></li>
                 <div class="bottomFighterCard">
                 <li class="indexLi">Age: <%= fighter.age %> Years Old</li>
