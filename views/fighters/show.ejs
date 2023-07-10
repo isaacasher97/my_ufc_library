@@ -4,11 +4,27 @@
 <body>
     <%- include('../partials/header.ejs') %>
     <main>
-        <div>
-          <article>
-            <h2>My Fighter: <%= fighter.name %></h2>
-          </article>
+        <div class="container">
+
+            <ul class="indexUl">
+                <li class="indexLi" id="topFighterCard"><a href="/fighter/<%= fighter._id %>"><%= fighter.name %></a></li>
+                <li class="indexLi"><img class="indexImg" src="<%= fighter.img %>"></li>
+                <div class="bottomFighterCard">
+                <li class="indexLi">Age: <%= fighter.age %> Years Old</li>
+                <li class="indexLi">Weight Class: <%= fighter.weightClass %></li>
+                <li class="indexLi">Hometown: <%= fighter.hometown %></li>
+                <li class="indexLi"> <%= fighter.readyToFight ? "Ready To Fight" : "NOT Ready To Fight" %></li>
+                </div>
+                <div class="buttons">
+                    <a href="/fighter"><button>Edit Fighter</button></a>
+                    <form>
+                        <input type="submit" value="Delete Fighter"/>
+                    </form>
+                    </div>
+            </ul>
+            
         </div>
+    
     </main>
 </body>
 </html>

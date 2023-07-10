@@ -56,9 +56,11 @@ h1 {
     margin: 5px auto;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-weight: 700;
+    width: 350px;
 }
 .indexUl {
-    margin: 0 auto;
+    margin: 10px auto;
+    padding: 0;
 }
 
 #topFighterCard > a {
@@ -68,4 +70,24 @@ h1 {
 
 #topFighterCard > a:hover {
     text-decoration: underline;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.buttons > a > button {
+    background-color: brown;
+    padding: 5px;
+    color: antiquewhite;
+    font-size: 25px;
+}
+
+.buttons > form > input {
+    background-color: brown;
+    padding: 5px;
+    color: antiquewhite;
+    font-size: 25px;
 }
