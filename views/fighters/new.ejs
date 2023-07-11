@@ -6,15 +6,17 @@
     <main>
         <div>
             <form action="/fighter" method="post">
-                <fieldset>
+                <fieldset id="newFighterFieldset" >
                     <legend>Create A New Fighter</legend>
-                    <label>Name: <input type="text" name="name" placeholder="Enter Fighter Name" /></label>
-                    <label>Age: <input type="number" name="age" placeholder="Enter Fighter Age" /></label>
+                    <div id="fighterInputs">
+                    <label>Name:<br> <input type="text" name="name" placeholder="Enter Fighter Name" /></label>
+                    <label>Age: <br><input type="number" name="age" placeholder="Enter Fighter Age" /></label>
                     <label>Weight Class: <input type="text" name="weightClass" placeholder="Fighter Weightclass" /></label>
-                    <label>Hometown: <input type="text" name="hometown" placeholder="Fighter HomeTown" /></label>
-                    <label>Img URL: <input type="text" name="img" placeholder="Fighter's image URL" /></label>
+                    <label>Hometown:<br> <input type="text" name="hometown" placeholder="Fighter HomeTown" /></label>
+                    <label>Image URL:<br> <input type="text" name="img" placeholder="Fighter's image URL" /></label>
                     <label>Is Fighter Ready To Fight? <input type="checkbox" name="readyToFight" /></label>
                     <input type="submit" value="Create New Fighter" />
+                    </div>
                 </fieldset>
             </form>
         </div>
