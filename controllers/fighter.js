@@ -28,4 +28,10 @@ router.get('/:id', async (req, res) => {
     res.render('fighters/show.ejs', {fighter})
 })
 
+router.delete('/:id', async (req, res) => {
+    const id = req.params.id;
+    await Fighter.findByIdAndRemove(id);
+    res.redirect('/fighter')
+})
+
 module.exports = router;

@@ -17,7 +17,7 @@
                 </div>
                 <div class="buttons">
                     <a href="/fighter"><button>Edit Fighter</button></a>
-                    <form>
+                    <form action="/fighter/<%= fighter._id %>?_method=DELETE" method="POST">
                         <input type="submit" value="Delete Fighter"/>
                     </form>
                     </div>
