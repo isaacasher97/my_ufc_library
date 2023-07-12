@@ -35,4 +35,12 @@ Each fighter in a users library can be edited & updated. There will also be an o
    
 ## ERD (ENTITY RELATIONSHIP DIAGRAM)
 
+---
+
+Fighter ERD:
+
 ![PICTURE OF ERD](https://i.imgur.com/SCsZoDw.png)
+
+User ERD:
+
+![PICTURE OF ERD](https://i.imgur.com/VDk3adr.png)
