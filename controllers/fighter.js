@@ -40,4 +40,11 @@ router.get('/:id/edit', async (req, res) => {
     res.render('fighters/edit.ejs', {fighter})
 })
 
+router.put('/:id', async (req, res) => {
+    const id = req.params.id;
+    req.body.readyToFight = req.body.readyToFight === 'on' ? true : false;
+    await Fighter.findByIdAndUpdate(id, req.body);
+    res.redirect('/fighter');
+})
+
 module.exports = router;
