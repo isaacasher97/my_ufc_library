@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('../partials/head.ejs') %>
+<body>
+    <%- include('../partials/header.ejs') %>
+    <main>
+        <div class="container">
+            <form>
+                <fieldset id="newFighterFieldset" >
+                    <legend>Edit <%= fighter.name %></legend>
+                    <div id="fighterInputs">
+                    <label>Name:<br> <input type="text" name="name" placeholder="Enter Fighter Name" value="<%= fighter.name %>"/></label>
+                    <label>Age: <br><input type="number" name="age" placeholder="Enter Fighter Age" value="<%= fighter.age %>"/></label>
+                    <label>Weight Class: <input type="text" name="weightClass" placeholder="Fighter Weightclass" value="<%= fighter.weightClass %>"/></label>
+                    <label>Hometown:<br> <input type="text" name="hometown" placeholder="Fighter HomeTown" value="<%= fighter.hometown %>"/></label>
+                    <label>Image URL:<br> <input type="text" name="img" placeholder="Fighter's image URL" value="<%= fighter.img %>"/></label>
+                    <label>Is Fighter Ready To Fight? 
+                    
+                        <input 
+                            type="checkbox" 
+                            name="readyToFight" 
+                            <%= fighter.readyToFight ? "checked" : "" %>
+                        />
+                    
+                    </label>
+                    <input type="submit" value="Create New Fighter" />
+                    </div>
+                </fieldset>
+            </form>
+            
+        </div>
+    
+    </main>
+</body>
+</html>

@@ -16,7 +16,7 @@
                 <li class="indexLi"> <%= fighter.readyToFight ? "Ready To Fight" : "NOT Ready To Fight" %></li>
                 </div>
                 <div class="buttons">
-                    <a href="/fighter"><button>Edit Fighter</button></a>
+                    <a href="/fighter/<%= fighter._id %>/edit"><button>Edit Fighter</button></a>
                     <form action="/fighter/<%= fighter._id %>?_method=DELETE" method="POST">
                         <input type="submit" value="Delete Fighter"/>
                     </form>

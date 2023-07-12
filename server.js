@@ -14,9 +14,13 @@ app.use(express.urlencoded()); // allows the req.body to be read from the form
 app.use(methodOverride('_method')); // override with POST having ?_method=DELETE or ?_method=PUT
 app.use(express.static('public')); // serve static files from public folder
 app.use("/fighter", FighterRouter)
+
+//redirect "/" route on deployed site to /fighter
+
 app.get("/", (req, res) => {
     res.redirect("/fighter")
 })
+
 // Listen 
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {console.log(`App Listening on port ${PORT}`)})
