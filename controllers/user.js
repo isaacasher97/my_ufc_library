@@ -4,7 +4,7 @@ const bcrypt = require('bcryptjs'); // Hashes and encrypts password when saving 
 const User = require('../models/user');
 
 const router = express.Router();
-//temo riutes - no ejs created yet for these routes
+
 router.get('/signup', (req, res) => {
     res.render('users/signup.ejs')
 })

@@ -6,7 +6,7 @@
     <main>
         <div class="container">
             <form method="POST" action="/fighter/<%= fighter._id %>?_method=PUT">
-                <fieldset id="newFighterFieldset" >
+                <fieldset>
                     <legend>Edit <%= fighter.name %></legend>
                     <div id="fighterInputs">
                     <label>Name:<br> <input type="text" name="name" placeholder="Enter Fighter Name" value="<%= fighter.name %>"/></label>

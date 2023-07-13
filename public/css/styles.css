@@ -121,3 +121,20 @@ legend {
 .ufc {
     color: red;
 }
+
+#userInputs {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+
+.clickToLoginSignup {
+    text-decoration: none;
+    text-align: center;
+    color: black;
+}
+
+.clickToLoginSignup:hover {
+    text-decoration: underline;
+}

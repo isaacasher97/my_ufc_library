@@ -20,7 +20,7 @@ app.use("/user", UserRouter);
 //redirect "/" route on deployed site to /fighter
 
 app.get("/", (req, res) => {
-    res.redirect("/fighter")
+    res.redirect("/user/signup")
 })
 
 // Listen 
