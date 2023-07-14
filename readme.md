@@ -44,3 +44,17 @@ Fighter ERD:
 User ERD:
 
 ![PICTURE OF ERD](https://i.imgur.com/VDk3adr.png)
+
+---
+
+## Future Enhancements
+
+- Allow Username & Password to be changed
+
+- Allow for users to delete their account
+
+- Create User Profile Page
+
+- Implement more properties for user data model (E.g. Profile Picture, age, location,etc)
+
+- Allow users to sign up/Login using their social accounts (FB, Twitter, Google, etc) using 0auth

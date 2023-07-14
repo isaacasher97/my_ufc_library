@@ -16,7 +16,7 @@ router.use((req, res, next) => {
 
 router.get('/', async (req, res) => {
     const allFighters = await Fighter.find({ username: req.session.username })
-    res.render('fighters/index.ejs', {fighters: allFighters})
+    res.render('fighters/index.ejs', {fighters: allFighters })
 })
 
 router.get('/new', (req, res) => {
