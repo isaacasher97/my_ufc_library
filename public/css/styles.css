@@ -138,3 +138,18 @@ legend {
 .clickToLoginSignup:hover {
     text-decoration: underline;
 }
+
+.signUpButtons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.signUpButtons > a > button {
+    margin: 15px auto;
+    font-size: 25px;
+    background-color: brown;
+    color: antiquewhite;
+    padding: 10px;
+    border-radius: 10px;
+}

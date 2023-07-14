@@ -20,7 +20,7 @@ app.use("/user", UserRouter);
 //redirect "/" route on deployed site to /fighter
 
 app.get("/", (req, res) => {
-    res.redirect("/user/signup")
+    res.render("index.ejs")
 })
 
 // Listen 
