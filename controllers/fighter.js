@@ -3,6 +3,17 @@ const Fighter = require('../models/fighter');
 
 const router = express.Router();
 
+router.use((req, res, next) => {
+    //check to see if user is logged in via req.session.loggedIn property
+    if(req.session.loggedIn){
+        next(); // allows the user to access the routes defined below
+    }else{ // if not logged in 
+        res.redirect('/user/login') // have the user redirected to the login page
+    }
+})
+
+
+
 router.get('/', async (req, res) => {
     const allFighters = await Fighter.find({})
     res.render('fighters/index.ejs', {fighters: allFighters})
