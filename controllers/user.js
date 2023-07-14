@@ -45,4 +45,11 @@ router.post('/login', async (req, res) => {
 
 })
 
+//destroy the session and have the user go back to the "/" route
+router.get('/logout', (req, res) => {
+    req.session.destroy(err => {
+        res.redirect('/');
+    })
+})
+
 module.exports = router;
