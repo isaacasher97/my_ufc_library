@@ -8,7 +8,8 @@ const fighterSchema = new Schema({
    weightClass: String,
    img: String,
    age: Number,
-   readyToFight: Boolean 
+   readyToFight: Boolean,
+   username: String
 });
 
 const Fighter = model('fighter', fighterSchema);

@@ -15,7 +15,7 @@ router.use((req, res, next) => {
 
 
 router.get('/', async (req, res) => {
-    const allFighters = await Fighter.find({})
+    const allFighters = await Fighter.find({ username: req.session.username })
     res.render('fighters/index.ejs', {fighters: allFighters})
 })
 
@@ -29,6 +29,8 @@ router.post('/', async (req, res) => {
 }else{
     req.body.readyToFight = false;
 }
+req.body.username = req.session.username; // scrubs the data and adds the username property to it
+
 await Fighter.create(req.body);
 res.redirect('/fighter')
 })
