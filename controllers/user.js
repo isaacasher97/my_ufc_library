@@ -34,8 +34,8 @@ router.post('/login', async (req, res) => {
         const doesPassMatch = bcrypt.compareSync(req.body.password, user.password) // compares the password typed in to the password saved to the db
 
         if(doesPassMatch) {
-            // req.session.username = username;
-            // req.sesssion.loggedIn = true;
+            req.session.username = req.body.username;
+            req.session.loggedIn = true;
              res.redirect('/fighter')
          }else {
             res.send('Password Is Incorrect, Please Go Back and try again')
